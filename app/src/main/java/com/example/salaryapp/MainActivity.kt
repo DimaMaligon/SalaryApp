@@ -29,16 +29,19 @@ class MainActivity : AppCompatActivity() {
                     Constance.MANAGER -> {
                         if (checkPassword(passwordInput?.toInt(), Constance.MANAGER_PASSWORD)) {
                             showSubscriptions("${Constance.MANAGER_SALARY}")
+                            showImagePerson(R.drawable.childface2)
                         } else showSubscriptions("Неверный пароль")
                     }
                     Constance.ENGINEER -> {
                         if (checkPassword(passwordInput?.toInt(), Constance.ENGINEER_PASSWORD)) {
                             showSubscriptions("${Constance.ENGINEER_SALARY}")
+                            showImagePerson(R.drawable.childface3)
                         } else showSubscriptions("Неверный пароль")
                     }
                 }
             } else {
                 showSubscriptions("Неверная фамилия или пароль")
+                showImagePerson(R.drawable.blackface)
             }
         }
     }

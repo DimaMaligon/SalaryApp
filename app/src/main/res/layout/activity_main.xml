@@ -77,6 +77,6 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/textTitle"
         app:layout_constraintStart_toStartOf="@+id/textTitle"
-        app:srcCompat="@drawable/childface3"
+        app:srcCompat="@drawable/blackface"
         tools:layout_editor_absoluteY="36dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
                     Constance.DIRECTOR -> {
                         if (checkPassword(passwordInput?.toInt(), Constance.DIRECTOR_PASSWORD)) {
                             showSubscriptions("${Constance.DIRECTOR_SALARY}")
+                            showImagePerson(R.drawable.childface)
                         } else showSubscriptions("Неверный пароль")
                     }
                     Constance.MANAGER -> {
@@ -45,6 +46,11 @@ class MainActivity : AppCompatActivity() {
     fun showSubscriptions(text: String) {
         binding.textMessage.visibility = View.VISIBLE
         binding.textMessage.text = text
+    }
+
+    fun showImagePerson(path : Int) {
+        binding.imageView.visibility = View.VISIBLE
+        binding.imageView.setImageResource(path)
     }
 
     fun checkPassword(passwordInput: Int?, passwordCorrected: Int): Boolean {

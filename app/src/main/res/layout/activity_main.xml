@@ -11,7 +11,7 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="200dp"
         android:fontFamily="sans-serif-black"
         android:text="Введите ваши Данные"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,4 +69,14 @@
         app:layout_constraintEnd_toEndOf="@+id/inputSurname"
         app:layout_constraintStart_toStartOf="@+id/inputSurname"
         app:layout_constraintTop_toBottomOf="@+id/inputSurname" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="146dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textTitle"
+        app:layout_constraintStart_toStartOf="@+id/textTitle"
+        app:srcCompat="@drawable/childface3"
+        tools:layout_editor_absoluteY="36dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
